@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCB Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <!-- Brand aligned to the left -->
+    <a class="navbar-brand me-auto fw-bold" href="#">RCB 🔴</a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav" style="gap: 15px;"> <!-- Adds spacing between links -->
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item">
+          <a class="nav-link" href="#player-stats">Player Stats</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+       
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero + Carousel -->
+ <section id="home" class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Royal Challengers Bangalore</h1>
+    <p class="lead">Ee Sala Cup Namde 🔥</p>
+
+    <div id="rcbCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Virat Kohli -->
+        <div class="carousel-item active">
+          <div class="player-card position-relative">
+            <img src="https://th.bing.com/th/id/OIP.IQl7M45j-SZmmAf3SoLHlgHaNK?w=184&h=328&c=7&r=0&o=7&pid=1.7&rm=3" class="d-block mx-auto player-img" alt="Virat Kohli">
+            <div class="player-info">
+              <h5>Virat Kohli</h5>
+              <p>Country: India</p>
+              <p>Age: 35</p>
+              <p>Strength: Batting</p>
+            </div>
+            <p class="player-caption">Virat Kohli</p>
+          </div>
+        </div>
+
+        <!-- Phil Salt -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://ichef.bbci.co.uk/ace/standard/3840/cpsprodpb/443b/live/496ab100-1d9b-11ef-a090-6b563b2f66e3.jpg" class="d-block mx-auto player-img" alt="Phil Salt">
+            <div class="player-info">
+              <h5>Phil Salt</h5>
+              <p>Country: England</p>
+              <p>Age: 28</p>
+              <p>Strength: Opening Batsman</p>
+            </div>
+            <p class="player-caption">Phil Salt</p>
+          </div>
+        </div>
+
+        <!-- Mayank Agarwal -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://staticg.sportskeeda.com/editor/2022/12/0d147-16699819050105-1920.jpg" class="d-block mx-auto player-img" alt="Mayank Agarwal">
+            <div class="player-info">
+              <h5>Mayank Agarwal</h5>
+              <p>Country: India</p>
+              <p>Age: 33</p>
+              <p>Strength: Batting</p>
+            </div>
+            <p class="player-caption">Mayank Agarwal</p>
+          </div>
+        </div>
+
+        <!-- Rajat Patidar -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://th.bing.com/th/id/OIP.9GEM_NNKonUqJTZQ5tbYogHaEG?rs=1&pid=ImgDetMain" class="d-block mx-auto player-img" alt="Rajat Patidar">
+            <div class="player-info">
+              <h5>Rajat Patidar</h5>
+              <p>Country: India</p>
+              <p>Age: 30</p>
+              <p>Strength: Middle-order Bat</p>
+            </div>
+            <p class="player-caption">Rajat Patidar (Captain)</p>
+          </div>
+        </div>
+
+        <!-- Jitesh Sharma -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1000.png" class="d-block mx-auto player-img" alt="Jitesh Sharma">
+            <div class="player-info">
+              <h5>Jitesh Sharma</h5>
+              <p>Country: India</p>
+              <p>Age: 30</p>
+              <p>Strength: Wicketkeeper</p>
+            </div>
+            <p class="player-caption">Jitesh Sharma</p>
+          </div>
+        </div>
+
+        <!-- Liam Livingstone -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://th.bing.com/th/id/OIP.rUdMHXNtdztUP4rv8EeLFAHaJQ?w=136&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="d-block mx-auto player-img" alt="Liam Livingstone">
+            <div class="player-info">
+              <h5>Liam Livingstone</h5>
+              <p>Country: England</p>
+              <p>Age: 31</p>
+              <p>Strength: Power Hitting</p>
+            </div>
+            <p class="player-caption">Liam Livingstone</p>
+          </div>
+        </div>
+
+        <!-- Romario Shepherd -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://th.bing.com/th/id/OIP.GzmzwquhTCZSKcbW8BCnuwHaFi?rs=1&pid=ImgDetMain" class="d-block mx-auto player-img" alt="Romario Shepherd">
+            <div class="player-info">
+              <h5>Romario Shepherd</h5>
+              <p>Country: West Indies</p>
+              <p>Age: 30</p>
+              <p>Strength: All-Rounder</p>
+            </div>
+            <p class="player-caption">Romario Shepherd</p>
+          </div>
+        </div>
+
+        <!-- Krunal Pandya -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://onecricketnews.akamaized.net/parth-editor/oc-dashboard/news-images-prod/1743154099652_Krunal%20Pandya%20IPL%20Price.jpg?type=mq" class="d-block mx-auto player-img" alt="Krunal Pandya">
+            <div class="player-info">
+              <h5>Krunal Pandya</h5>
+              <p>Country: India</p>
+              <p>Age: 33</p>
+              <p>Strength: Spin & Batting</p>
+            </div>
+            <p class="player-caption">Krunal Pandya</p>
+          </div>
+        </div>
+
+        <!-- Bhuvneshwar Kumar -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://th.bing.com/th/id/OIP.IvkneLsxrYv3B0mC1hTBKwHaEK?rs=1&pid=ImgDetMain" class="d-block mx-auto player-img" alt="Bhuvneshwar Kumar">
+            <div class="player-info">
+              <h5>Bhuvneshwar Kumar</h5>
+              <p>Country: India</p>
+              <p>Age: 34</p>
+              <p>Strength: Swing Bowling</p>
+            </div>
+            <p class="player-caption">Bhuvneshwar Kumar</p>
+          </div>
+        </div>
+
+        <!-- Josh Hazlewood -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/338200/338216.jpg" class="d-block mx-auto player-img" alt="Josh Hazlewood">
+            <div class="player-info">
+              <h5>Josh Hazlewood</h5>
+              <p>Country: Australia</p>
+              <p>Age: 33</p>
+              <p>Strength: Fast Bowling</p>
+            </div>
+            <p class="player-caption">Josh Hazlewood</p>
+          </div>
+        </div>
+
+        <!-- Yash Dayal -->
+        <div class="carousel-item">
+          <div class="player-card position-relative">
+            <img src="https://th.bing.com/th/id/OIF.2lp5039j150QCGJEOHLE2Q?w=315&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="d-block mx-auto player-img" alt="Yash Dayal">
+            <div class="player-info">
+              <h5>Yash Dayal</h5>
+              <p>Country: India</p>
+              <p>Age: 25</p>
+              <p>Strength: Left-arm Fast</p>
+            </div>
+            <p class="player-caption">Yash Dayal</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#rcbCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#rcbCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- player stat -->
+ <div class="container mt-5">
+  <h2 class="text-center mb-4">RCB Player Stats</h2>
+  <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search player by name...">
+  <table class="table table-bordered table-striped text-center">
+    <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+        <th>Strength</th>
+        <th>Role</th>
+        <th>Matches</th>
+        <th>Runs</th>
+        <th>Wickets</th>
+      </tr>
+    </thead>
+    <tbody id="playerTableBody"></tbody>
+  </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="playerModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="playerName"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="playerImg" class="img-fluid rounded mb-3" style="max-height: 300px;">
+        <p id="playerCountry"></p>
+        <p id="playerAge"></p>
+        <p id="playerStrength"></p>
+        <p id="playerRole"></p>
+        <p id="playerMatches"></p>
+        <p id="playerRuns"></p>
+        <p id="playerWickets"></p>
+        <p id="playerBatting"></p>
+        <p id="playerBowling"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Players -->
+  <section id="players" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center"> Best Players</h2>
+      <div class="row g-4">
+        <!-- Player Card Example -->
+        <div class="col-md-4"><div class="card rise-effect">
+          <img src="https://th.bing.com/th/id/OIP.kkFpbRd3xx6mvfvO7OKXTQHaEZ?pid=ImgDet&w=191&h=113&c=7" class="card-img-top" alt="Virat Kohli">
+          <div class="card-body text-center">
+            <h5 class="card-title">Virat Kohli</h5><p class="card-text">Batsman</p>
+          </div>
+        </div></div>
+        <div class="col-md-4"><div class="card rise-effect">
+          <img src="https://th.bing.com/th/id/OIP.9GEM_NNKonUqJTZQ5tbYogHaEG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Faf du Plessis">
+          <div class="card-body text-center"><h5>Rajat Pathidar</h5><p>Captain / Batsman</p></div></div></div>
+        <div class="col-md-4"><div class="card rise-effect">
+          <img src="https://th.bing.com/th/id/OIP.GzmzwquhTCZSKcbW8BCnuwHaFi?rs=1&pid=ImgDetMain" class="card-img-top" alt="Glenn Maxwell">
+          <div class="card-body text-center"><h5>Romario Shepherd</h5><p>All‑Rounder</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Achievements -->
+<section id="achievements" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-4 text-warning">🏆 Achievements</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul class="list-group achievement-list shadow-lg">
+          <li class="list-group-item bg-secondary text-white border-0 mb-2 rounded">
+            🔥 IPL Finalists: 2009, 2011, 2016
+          </li>
+          <li class="list-group-item bg-secondary text-white border-0 mb-2 rounded">
+            🗣️ Most passionate fan slogan: <strong>Ee Sala Cup Namde</strong>
+          </li>
+          <li class="list-group-item bg-secondary text-white border-0 mb-2 rounded">
+            👑 Virat Kohli – IPL's all-time top run scorer
+          </li>
+          <li class="list-group-item bg-secondary text-white border-0 mb-2 rounded">
+            💥 Chris Gayle – Highest individual score in IPL (175*)
+          </li>
+          <li class="list-group-item bg-success text-white border-0 mb-2 rounded">
+            🏆 **RCB won IPL 2025 — Champions at last!**
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-4 text-danger">📸 RCB Gallery</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://wallpapercave.com/wp/wp7433218.jpg" alt="RCB Image 1" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://wallpapercave.com/wp/wp8887585.jpg" alt="RCB Image 2" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.royalchallengers.com/PRRCB01/public/styles/1061x767_landscape/public/2025-06/_AIL8656.jpg?itok=vcdm3E9V" alt="RCB Image 3" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6Q96sm-MWozz2Tck2A94xWVDfSSPb7RsLuu8TKPnKnN3jdwrE5Cq3cIgN9Q0Od6EQuHWAQmEFYGgDKq45J1Asy7cWSEF3dlBX1fF4EBZBqzcsbwdc-xBZ3soiuylVQOgGw6jxPJRbn-ZbRcjbcHmVbjvxtrNFMLs6oegIhUAnEs_EbXDsMgQcYtPMAWI/s748/Virat%20Kohli%20RCB%20IPL%20trophy.JPG" alt="RCB Image 4" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://wallpapercave.com/wp/wp7433235.jpg" alt="RCB Image 5" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://th.bing.com/th/id/OIP.OBk7KaJxvCLUB5m8RGk6LwHaEK?w=334&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt="RCB Image 6" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- About Me -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-4 text-danger">👤 About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <h3 class="text-dark">Akshay Kaushik</h3>
+        <p class="lead text-muted">
+          I am a passionate web developer and cricket enthusiast from India. I love building creative websites and I'm a die-hard fan of Royal Challengers Bangalore. I’m currently focusing on improving my full-stack skills using Node.js and modern web technologies.
+        </p>
+        <ul class="list-unstyled mt-4">
+          <li><strong>📞 Phone:</strong> <a href="tel:8791848463" class="text-decoration-none text-dark">8791848463</a></li>
+          <li><strong>📧 Email:</strong> <a href="mailto:kaushikakshay2006@gmail.com" class="text-decoration-none text-dark">kaushikakshay2006@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Me</h2>
+      <form class="mx-auto" style="max-width:500px">
+        <div class="mb-3"><input type="text" class="form-control" placeholder="Name" required></div>
+        <div class="mb-3"><input type="email" class="form-control" placeholder="Email" required></div>
+        <div class="mb-3"><textarea class="form-control" rows="4" placeholder="Message" required></textarea></div>
+        <div class="text-center"><button type="submit" class="btn btn-danger">Send Message</button></div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white py-3">
+    <p>&copy; 2025 RCB Portfolio — Built with ❤️</p>
+  </footer>
+<script src="js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
