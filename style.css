@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts & Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+/* Navbar */
+.nav-link {
+  position: relative;
+  color: white !important;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: crimson; /* RCB theme color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: crimson !important;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background-color: #111; /* Solid dark background */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: normal; /* disable blend effect */
+  text-shadow: 2px 2px 4px #000;
+}
+
+.player-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.player-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #d10000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover .player-img {
+  transform: scale(1.05);
+}
+
+.player-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  opacity: 0;
+  padding: 15px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.player-card:hover .player-info {
+  opacity: 1;
+}
+
+.player-caption {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+/* About Section */
+/* About Section Enhancement */
+#about {
+  background: linear-gradient(135deg, #ffefef, #ffe6e6);
+}
+
+.about-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+}
+
+.about-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d10000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+
+/* Player Carousel */
+.players h2 {
+  font-weight: 700;
+}
+.carousel-item img {
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 15px;
+  border: 3px solid #d10000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.card-img-top {
+  width: 100%;
+  height: 250px; /* You can adjust this value as per your design */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item h5 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Achievements Styling */
+#achievements {
+  background: linear-gradient(to right, #111, #222);
+}
+.achievement-list li {
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  transition: transform 0.3s ease;
+}
+.achievement-list li:hover {
+  transform: scale(1.03);
+  background-color: #b30000 !important;
+}
+
+
+/* Match Schedule */
+.schedule table {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.schedule th {
+  background-color: #d10000;
+  color: #fff;
+}
+
+/* About Me */
+.fan-about p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Contact */
+.contact p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+#gallery img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.badge {
+  font-size: 0.95rem;
+  padding: 0.5em 0.75em;
+  border-radius: 1rem;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f8f9fa;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .carousel-item img {
+    width: 80% !important;
+  }
+}
